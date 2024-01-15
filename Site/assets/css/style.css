@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    transition: 0.5s ease-in-out;
+} 
+
+ /* Menu */
+ #menu {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .dot:hover,
+  .dot.selected {
+    transform: scale(1.7);
+  }
+
+  .dot#dot1,
+  .dot#dot2,
+  .dot#dot3,
+  .dot#dot4,
+  .dot#dot5 {
+    background-color: rgba(0, 0, 0, 0.41); /* Black */
+  }
+
+  .dot#dot1:hover,
+  .dot#dot1.selected {
+    background-color: rgba(0, 0, 0, 0.453); 
+  }
+
+  .dot#dot2:hover,
+  .dot#dot2.selected {
+    background-color: rgba(0, 0, 0, 0.453); 
+  }
+
+  .dot#dot3:hover,
+  .dot#dot3.selected {
+    background-color: rgba(0, 0, 0, 0.453); 
+  }
+
+  .dot#dot4:hover,
+  .dot#dot4.selected {
+    background-color: rgba(0, 0, 0, 0.453); 
+  }
+
+  .dot#dot5:hover,
+  .dot#dot5.selected {
+    background-color: rgba(0, 0, 0, 0.453);
+  }
+
+  /* Common styling for sections */
+.section {
+    font-family: serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: gray;
+}
+
+
+.section h2 {
+    top: 10px;
+    justify-content: center;
+}
+
+.section1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.legenda {
+    font-style: italic;
+}
+
+/* Section 2 Styles */
+.section2 {
+    font-size: 20px;
+    font-family: serif;
+    background: white;
+}
+
+
+/* Section 3 Styles */
+#section3
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 10px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust the width of the timeline items */
+    margin-bottom: 20px;
+  }
+  
+  .timeline-date {
+    position: absolute;
+    top: -30px;
+    background-color: black; /* Use your primary color */
+    color: white;
+    padding: 2px 5px;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 576px) {
+    /* Small devices (landscape phones, 576px and up) */
+    .timeline-item {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Medium devices (tablets, 768px and up) */
+    .timeline-container {
+      flex-direction: row;
+    }
+  
+    .timeline-item {
+      align-items: flex-start;
+      width: 45%; /* Adjust the width of the timeline items */
+      margin-right: 5%;
+    }
+  
+    .timeline-date {
+      top: 0;
+      left: -80px;
+    }
+  
+    .timeline-content {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Large devices (desktops, 992px and up) */
+    .timeline-item {
+      width: 40%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Extra large devices (large desktops, 1200px and up) */
+    .timeline-item {
+      width: 30%;
+    }
+  }
+
+
+.section3 {
+    font-size: 15px;
+}
+
+  /* Section 3 Styles */
+  #section3 {
+    background-color: gray; /* Set your desired background color */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .work-experience {
+    width: 300px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .work-experience:hover {
+    width: 400px; /* Adjust the width on hover */
+    height: 250px;
+    opacity: 0.8;
+    justify-content: center;
+    padding: 0;
+    top: 5px;
+  }
+
+  .date-style {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #00000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .details {
+    padding: 5px;
+    text-align: left;
+    bottom: 5px;
+    font-family: serif;
+    color: rgb(255, 255, 255);
+  }
+
+  .p1 {
+    color: white;
+  }
+
+  /* CV Download Styles */
+  .cv-download {
+    margin-top: 20px;
+  }
+
+  .cv-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Set your desired background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+
+.image {
+    position: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 70%;
+}
+
+.about-container {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          align-items: center;
+}
+
+.date-style {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.list {
+    list-style: circle inside;
+}
+
+
+/* Section 4 Styles*/
+
+.section4 {
+    background: white;
+}
+
+
+.rev-block {
+  font-family: monospace;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 0.4em;
+  position: relative;
+  top: 40%;
+  left: 46%;
+  transform: translate(-50%, -50%)
+}
+
+.rev-block span{
+  opacity: 0.5;
+  animation: appear-text 1s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.rev-block:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  widows: 0%;
+  height: 100%;
+  background: lightgray;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  opacity: 0.7;
+}
+
+@keyframes rev-block {
+  
+  0%{
+      left: 0;
+      width: 0%;
+  }
+  50%{
+      left: 0;
+      width: 100%;
+  }
+  100%{
+      left: 100%;
+      width: 0%;
+  }
+}
+
+@keyframes appear-text {
+
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+/* Section 5 styles*/
+
+.section5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* Loader (loading) */
+  .loader {
+    margin: auto;
+    border: 20px solid #00000088;
+    border-radius: 50%;
+    border-top: 20px solid rgb(255, 255, 255);
+    width: 5rem;
+    height: 5rem;
+    animation: spinner 7s linear infinite;
+    }
+  
+    @keyframes spinner {
+     0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+ 
+
+  /* Footer */
+  footer {
+    font-family: serif;
+    text-align: center;
+    margin: 0;
+    padding: 0.3rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.864);
+    color: black;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+          .about-container {
+              flex-direction: column;
+          }
+
+          .column {
+              width: 100%;
+              margin-bottom: 20px;
+          }
+  }
+
+
